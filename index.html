@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You 🤍</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEART SECTION -->
+<section class="hearts-section">
+    <h1>Tap a Heart 🤍</h1>
+
+    <div class="hearts-grid">
+        <div class="heart" data-id="0">❤</div>
+        <div class="heart" data-id="1">❤</div>
+        <div class="heart" data-id="2">❤</div>
+        <div class="heart" data-id="3">❤</div>
+        <div class="heart" data-id="4">❤</div>
+        <div class="heart" data-id="5">❤</div>
+    </div>
+
+    <div class="message-box" id="messageBox">
+        <p id="loveMessage"></p>
+    </div>
+</section>
+
+<!-- LETTER SECTION -->
+<section class="letter-section">
+    <h2>A Letter For You</h2>
+
+    <div class="envelope-wrapper">
+        <div class="envelope" id="envelope">
+            <div class="flap"></div>
+            <div class="letter">
+                <p id="typedText"></p>
+            </div>
+        </div>
+    </div>
+
+    <button class="open-btn" onclick="openLetter()">Open Letter 💌</button>
+</section>
+<!-- DISCOVER SECTION -->
+<section class="discover-section">
+    <h2>Discover Our Moments ✨</h2>
+
+    <div class="discover-card">
+        <img id="discoverImage" src="" alt="">
+        <p id="discoverText"></p>
+    </div>
+
+    <button class="discover-btn" onclick="nextMemory()">
+        Discover a Memory 🤍
+    </button>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
