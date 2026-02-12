@@ -89,26 +89,29 @@ const memories = [
         text: "Nta habeltniiii bssah nbghik."
     },
         {
-        img: "images/9.jpg",
+        img: "images/9.png",
         text: "LOVE YOU"
     }
 ];
 
 let currentMemory = 0;
-
 function nextMemory() {
     const card = document.querySelector(".discover-card");
     const image = document.getElementById("discoverImage");
     const text = document.getElementById("discoverText");
 
     // Affiche la carte si elle est cachée
-    if (card.style.display === "none") {
+    if (card.style.display === "none" || card.style.display === "") {
         card.style.display = "block";
     }
 
-    // Affiche l'image et le texte actuel
-    image.src = memories[currentMemory].img;
-    text.innerText = memories[currentMemory].text;
+    // Met un petit effet fade
+    card.style.opacity = 0;
+    setTimeout(() => {
+        image.src = memories[currentMemory].img;
+        text.innerText = memories[currentMemory].text;
+        card.style.opacity = 1;
+    }, 100); // effet fade
 
     // Passe à la mémoire suivante
     currentMemory++;
@@ -118,4 +121,3 @@ function nextMemory() {
         currentMemory = 0;
     }
 }
-

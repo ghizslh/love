@@ -137,6 +137,7 @@ h2 {
 
 .discover-section {
     padding: 80px 20px;
+    text-align: center;
 }
 
 .discover-section h2 {
@@ -146,12 +147,12 @@ h2 {
 
 .discover-card {
     width: 350px;
-    margin: auto;
+    margin: 20px auto;
     background: white;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-    display: none;
+    display: none; /* caché au départ */
     animation: fadeMemory 0.8s ease;
 }
 
